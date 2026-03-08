@@ -1,0 +1,325 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f9fafb;
+color:#333;
+line-height:1.6;
+}
+
+/* CONTAINER */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:white;
+padding:15px 0;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+}
+
+.logo span{
+color:#f59e0b;
+}
+
+nav{
+display:flex;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.btn-wa{
+background:#25D366;
+color:white;
+padding:8px 15px;
+border-radius:6px;
+text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://picsum.photos/1600/900");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+margin-bottom:20px;
+}
+
+.btn-primary{
+background:#f59e0b;
+padding:12px 25px;
+color:white;
+border-radius:8px;
+text-decoration:none;
+display:inline-block;
+}
+
+/* ABOUT */
+
+.about{
+padding:80px 20px;
+text-align:center;
+}
+
+/* FEATURES */
+
+.features{
+background:white;
+padding:60px 20px;
+}
+
+.features .container{
+gap:20px;
+}
+
+.feature{
+background:#f3f4f6;
+padding:25px;
+border-radius:10px;
+flex:1;
+text-align:center;
+}
+
+/* PRODUK */
+
+.produk{
+padding:80px 20px;
+text-align:center;
+}
+
+.produk-container{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.produk-card{
+background:white;
+padding:15px;
+border-radius:10px;
+width:260px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.produk-card:hover{
+transform:translateY(-5px);
+}
+
+.produk-card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+/* GALERI */
+
+.galeri{
+padding:80px 20px;
+background:#f3f4f6;
+text-align:center;
+}
+
+.galeri-container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.galeri-container img{
+width:100%;
+border-radius:10px;
+}
+
+/* TESTIMONI */
+
+.testimoni{
+padding:80px 20px;
+text-align:center;
+}
+
+.testi-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.testi{
+background:white;
+padding:20px;
+border-radius:10px;
+width:300px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* MAP */
+
+.map{
+padding:80px 20px;
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+background:#1f2937;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+/* WHATSAPP FLOAT */
+
+.wa-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+
+/* TABLET */
+
+@media (max-width: 1024px){
+
+.hero h1{
+font-size:38px;
+}
+
+.galeri-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px){
+
+.container{
+flex-direction:column;
+gap:15px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+height:auto;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.features .container{
+flex-direction:column;
+}
+
+.produk-card{
+width:90%;
+}
+
+.galeri-container{
+grid-template-columns:1fr;
+}
+
+.testi{
+width:90%;
+}
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width:480px){
+
+.logo{
+font-size:18px;
+}
+
+.hero h1{
+font-size:26px;
+}
+
+.hero p{
+font-size:13px;
+}
+
+.btn-primary{
+padding:10px 20px;
+font-size:14px;
+}
+
+.wa-float{
+padding:12px 16px;
+font-size:14px;
+}
+
+}
